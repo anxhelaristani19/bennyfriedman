@@ -21,7 +21,6 @@
 if(getenv('CLEARDB_DATABASE_URL')) {
     $db = parse_url('mysql://bb8daa6b60c69a:374c5b0f@us-cdbr-east-02.cleardb.com/heroku_b019d8867a9174f?reconnect=true');
     define(‘DB_NAME’,`benny db`);
-    define(‘DB_HOST’, `bb8daa6b60c69a`);
     define(‘DB_CHARSET’, ‘utf8’);
     define(‘DB_COLLATE’, ‘’);
 } else {
