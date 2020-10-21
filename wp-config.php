@@ -19,8 +19,8 @@
  */
  
 if(isset($_ENV[`CLEARDB_DATABASE_URL`])) {
-    $db = parse_url($_ENV[`CLEARDB_DATABASE_URL`]);
-    define(‘DB_NAME’, 'bennydb'));
+    $db = parse_url([`mysql://bb8daa6b60c69a:374c5b0f@us-cdbr-east-02.cleardb.com/heroku_b019d8867a9174f?reconnect=true`]);
+    define(‘DB_NAME’, 'bennydb');
     define(‘DB_USER’, 'benny');
     define(‘DB_PASSWORD’, 'PPEmRlgDXiDbrugM');
     define(‘DB_HOST’, 'localhost');
